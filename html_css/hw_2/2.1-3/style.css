@@ -1,0 +1,50 @@
+blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+a[href^='https'] {
+	color: red;
+}
+
+.list > li:last-child {
+   background: green;
+}
+
+ul + p {
+	font-size: 26px;
+}
+
+.text-box > h3:first-child {
+	color: pink;
+}
+
+#greycol {
+	color: grey;
+}
+
+.text-box >div:nth-child(5) {
+	color: red;
+}
+
+.text-box > p:nth-child(7) {
+  color: green;
+}
+
+.yellow {
+	color: yellow;
+}
+
