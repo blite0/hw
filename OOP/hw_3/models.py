@@ -30,9 +30,6 @@ class Programmer(Employee):
         return 'Должность: {}, Имя: {}'.format(self.__class__.__name__, self.name)
 
 
-
-
-
 class Candidate (object):
     def __init__(self,full_name, email, technologies, main_skill, main_skill_grade):
         self.full_name = full_name
@@ -50,7 +47,6 @@ class Vacancy(object):
 
 
 Grisha = Programmer("grisha", "grishager@gmail.com", 50)
-
 print(Grisha)
 print(Grisha.work())
 print(Grisha.check_salary(20))

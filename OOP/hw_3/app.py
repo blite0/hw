@@ -13,3 +13,9 @@ def main():
                                          'programming', 'junior')
     vacancy_first = models.Vacancy("Phyton", 'django', 'senior')
     vacancy_second = models.Vacancy("Phyton", 'django', 'junior')
+    print(recruiter)
+
+
+if __name__ == '__main__':
+    main()
+
