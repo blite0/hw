@@ -19,7 +19,6 @@ from myapp.views import *
 
 urlpatterns = [
     path('', include('myapp.urls')),
-    path('my_url/', include('myapp.urls')),
     path('', index, name='index'),
     path('article/', main_article, name='mail_article'),
     path('article/archive/', second_arhive, name='second_arhive'),
