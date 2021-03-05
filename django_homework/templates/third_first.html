@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{% block content %}
+    <div style="border: 1px darkblue solid">
+    {% if article_id|divisibleby:"2" %}
+        <div class="container container-1">
+            chetnoe
+        </div>
+    {% elif article_id|divisibleby:"1" %}
+        <div class="container container-2">
+            nechetnoe
+        </div>
+
+    {% endif %}
+    {% if name %}
+        {% include "third_second.html" %}
+    {% endif %}
+    <a href="{% url 'index' %}">To the index page</a>
+{% endblock %}
+</body>
+</html>
